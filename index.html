@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Kristion Bivens' Personal Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -14,7 +13,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -24,33 +23,40 @@
       <div class="logo">Kristion Bivens</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
+          <!--the lines of the hamburger menu-->
           <span></span>
           <span></span>
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/Untitled design (2).png" alt="Kristion Bivens profile picture" />
+        <img
+          src="./assets/PortfolioPFP.png"
+          alt="Joie Whitmon profile picture"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Kristion Bivens</h1>
-        <p class="section__text__p2">Freshman at Kennesaw State University</p>
+        <p class="section__text__p2">Computer Science Student</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/CoverLetter.png')"
+            onclick="window.open('./assets/KristionDeonBivensResume.pdf')"
           >
-            Download CV
+            View Resume
           </button>
+
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
@@ -58,13 +64,13 @@
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="My LinkedIn Profile Link"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/kristion-bivens-38bba4320/'"
+            onclick="location.href='https://www.linkedin.com/in/kristionbivens/'"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="My GitHub Profile Link"
             class="icon"
             onclick="location.href='https://github.com/KristionB'"
           />
@@ -78,7 +84,7 @@
         <div class="section__pic-container">
           <img
             src="./assets/AboutMe.jpeg"
-            alt="Profile picture"
+            alt="Picture of Kristion"
             class="about-pic"
           />
         </div>
@@ -87,145 +93,197 @@
             <div class="details-container">
               <img
                 src="./assets/experience.png"
-                alt="Experience icon"
+                alt="experience icon"
                 class="icon"
               />
-              <h3>Recent Experience</h3>
-              <p>Team Member <br />Chick-fil-A</p>
+              <h3>Interests</h3>
+              <p>Backend Development<br />Cloud Security <br />Technical Program Management <br />ISA </p>
             </div>
             <div class="details-container">
               <img
                 src="./assets/education.png"
-                alt="Education icon"
+                alt="education icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>CS(AI) + Cybersecurity<br />Kennesaw State University</p>
+              <p>
+                Bachelor of Science<br />Computer Science <br />Minor in Cybersecurity<br />
+                (continuing)
+              </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Hi! My name is Kristion Bivens, I was born in Flordia but raised in Georgia, and I am currently a freshman at Kennesaw State University. I am very passionate about technology and programming. I have been coding for over 6 years now, and I have experience in various programming languages such as HTML, CSS, Python, JavaScript, C#, and SQL. I am always eager to learn new techniques and improve my skills. In my free time, I enjoy working on personal projects, contributing to open-source software, collecting anime/manga, and baking. 
-              <br>
-              <br>
-              I'm not just all about technology. Most importantly, I am huge on compassion, service, and altruism. I've been involved in various communtiy services from a young age, and currently now helping out with my father's fraternity, Omega Psi Phi Fraternity, Inc. I believe in giving back to the community and making a positive impact in the world. I am also a member of the National Society of Black Engineers (NSBE) and the KSU Anime Club, where I get to connect with like-minded individuals and share my passion for technology and anime. It's all about inside the person, not outside.
+              Hey! I'm Kristion, a Computer Science major with a Cybersecurity minor
+              at Kennesaw ('29). My tech journey began with coding classes at Code Ninjas,
+              where I discovered the power of progress in believing you already achieved something
+              before you achieved it, leading to confidence & success. This motivated me to address similar
+              disparities in tech, where I found myself among the few black men or
+              people of color in classes & mentorships because of cultural discouragement. 
+              Active in NSBE & Colorstack, I enhance my skills and contribute to
+              diversifying tech through mentorship & service. I'm excited to
+              pursue research, internships, & jobs in tech. Join me on my
+              journey towards a more inclusive future in technology!
             </p>
           </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#skills'"
       />
-    </section>
-    <section id="experience">
+     </section>
+
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills & Awards</h1>
-      <div class="experience-details-container">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Skills</h2>
+            <h2 class="skills-sub-title">Technical Skills</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
                   <h3>Python</h3>
-                  <p>Experienced</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Novice</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Experienced</p>
+                  <p>Novice</p>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Typescript</h3>
-                  <p>Experienced</p>
+                  <h3>CSS</h3>
+                  <p>Beginner</p>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Linux</h3>
+                  <h3>HTML</h3>
                   <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Beginner</p>
                 </div>
               </article>
             </div>
           </div>
+
           <div class="details-container">
-            <h2 class="experience-sub-title">Awards</h2>
+            <h2 class="skills-sub-title">Soft Skills</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/86-860187_free-icons-png-black-award-icon-png-transparent.png"
-                  alt="Experience icon"
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>AP Scholar with Honors</h3>
-                  <p>AP College Board</p>
+                  <h3>Problem Solving</h3>
                 </div>
               </article>
+
               <article>
                 <img
-                  src="./assets/86-860187_free-icons-png-black-award-icon-png-transparent.png"
-                  alt="Experience icon"
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>BAM Scholar</h3>
-                  <p>Microsoft</p>
+                  <h3>Time Management</h3>
                 </div>
               </article>
+
               <article>
                 <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
                 />
                 <div>
-                  </div>
+                  <h3>Communication</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Leadership</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Organization</h3>
                 </div>
               </article>
             </div>
@@ -234,26 +292,27 @@
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/testportfolio.png"
-                alt="Project 1"
+                alt="UI Toolkit Project Demo"
                 class="project-img"
-              />
+                       />
             </div>
             <h2 class="experience-sub-title project-title">UI Toolkit</h2>
-            <p>Contributed to a powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript.</p>
+            
             
             <div class="btn-container">
               <button
@@ -262,24 +321,17 @@
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ionicframework.com/'"
-              >
-                Live Demo
-              </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/start.png"
+                src="./assets/whiteboard.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Interactive Whiteboard</h2>
-            <p>A lightweight NodeJS collaborative Whiteboard/Sketchboard</p>
             
             <div class="btn-container">
               <button
@@ -288,24 +340,17 @@
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://cloud13.de/testwhiteboard/?whiteboardid=myNewWhiteboard'"
-              >
-                Live Demo
-              </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/Flush.png"
+                src="./assets/Texas_Hold'em_Poker_Table_with_Blinds.svg.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Hold-em-Poker</h2>
-            <p>A simulation of Texas Hold'em Poker game developed in Python</p>
 
             <div class="btn-container">
               <button
@@ -317,11 +362,12 @@
           </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#skills'"
       />
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -329,10 +375,12 @@
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
-            alt="Email icon"
+            alt="email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:kristionbivens2006@gmail.com" target="_blank">kristionbivens2006@gmail.com</a></p>
+          <p>
+            <a href="mailto:kristionbivens2006@gmail.com">kristionbivens2006@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -340,22 +388,23 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/kristion-bivens-38bba4320/">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/kristionbivens/">LinkedIn</a></p>
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Kristion Bivens. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Kristion Bivens. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
   </body>

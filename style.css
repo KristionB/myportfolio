@@ -380,6 +380,24 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/* Scope alignment changes to projects only so About/Skills layout is not affected */
+#projects .about-containers {
+  align-items: stretch;
+}
+
+#projects .about-containers .details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 420px; /* adjust if you want taller/shorter project cards */
+}
+
+#projects .about-containers .details-container .btn-container {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
 /* CONTACT */
 
 #contact {
