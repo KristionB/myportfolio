@@ -6,6 +6,8 @@
     <title>Kristion Bivens' Personal Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -38,7 +40,7 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+  <section id="profile" data-aos="fade-up">
       <div class="section__pic-container">
         <img
           src="./assets/PortfolioPFP.png"
@@ -52,7 +54,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/KristionDeonBivensResume.pdf')"
+            onclick="window.open('./assets/KristionDeonBivensResume25.pdf')"
           >
             View Resume
           </button>
@@ -77,7 +79,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -86,11 +88,12 @@
             src="./assets/AboutMe.jpeg"
             alt="Picture of Kristion"
             class="about-pic"
+            data-aos="fade-right"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container" data-aos="fade-left">
               <img
                 src="./assets/experience.png"
                 alt="experience icon"
@@ -99,7 +102,7 @@
               <h3>Interests</h3>
               <p>Backend Development<br />Cloud Security <br />Technical Program Management <br />ISA </p>
             </div>
-            <div class="details-container">
+            <div class="details-container" data-aos="fade-left" data-aos-delay="100">
               <img
                 src="./assets/education.png"
                 alt="education icon"
@@ -112,7 +115,7 @@
               </p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="text-container" data-aos="fade-up" data-aos-delay="150">
             <p>
               Hey! I'm Kristion, a Computer Science major with a Cybersecurity minor
               at Kennesaw ('29). My tech journey began with coding classes at Code Ninjas,
@@ -136,7 +139,7 @@
       />
      </section>
 
-    <section id="skills">
+  <section id="skills" data-aos="fade-up">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="skills-details-container">
@@ -144,7 +147,7 @@
           <div class="details-container">
             <h2 class="skills-sub-title">Technical Skills</h2>
             <div class="article-container">
-              <article>
+        <article data-aos="fade-up" data-aos-delay="50">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -156,7 +159,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="100">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -168,7 +171,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="150">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -180,7 +183,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="200">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -192,7 +195,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="250">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -204,7 +207,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="300">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -218,10 +221,10 @@
             </div>
           </div>
 
-          <div class="details-container">
+      <div class="details-container">
             <h2 class="skills-sub-title">Soft Skills</h2>
             <div class="article-container">
-              <article>
+        <article data-aos="fade-up" data-aos-delay="50">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -232,7 +235,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="100">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -243,7 +246,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="150">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -254,7 +257,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="200">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -265,7 +268,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="250">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -276,7 +279,7 @@
                 </div>
               </article>
 
-              <article>
+              <article data-aos="fade-up" data-aos-delay="300">
                 <img
                   src="./assets/checkmark.png"
                   alt="skills icon"
@@ -309,6 +312,7 @@
                 src="./assets/testportfolio.png"
                 alt="UI Toolkit Project Demo"
                 class="project-img"
+                data-aos="zoom-in"
                        />
             </div>
             <h2 class="experience-sub-title project-title">UI Toolkit</h2>
@@ -323,12 +327,13 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+      <div class="details-container color-container" data-aos="fade-up" data-aos-delay="100">
             <div class="article-container">
               <img
                 src="./assets/whiteboard.png"
                 alt="Project 2"
                 class="project-img"
+        data-aos="zoom-in"
               />
             </div>
             <h2 class="experience-sub-title project-title">Interactive Whiteboard</h2>
@@ -342,12 +347,13 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+      <div class="details-container color-container" data-aos="fade-up" data-aos-delay="200">
             <div class="article-container">
               <img
                 src="./assets/Texas_Hold'em_Poker_Table_with_Blinds.svg.png"
                 alt="Project 3"
                 class="project-img"
+        data-aos="zoom-in"
               />
             </div>
             <h2 class="experience-sub-title project-title">Hold-em-Poker</h2>
@@ -407,5 +413,10 @@
       <p>Copyright &#169; 2025 Kristion Bivens. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic' });
+    </script>
   </body>
 </html>
