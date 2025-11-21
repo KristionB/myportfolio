@@ -12,6 +12,31 @@
   }
 }
 
+/* Desktop: keep desktop nav visible while scrolling */
+@media screen and (min-width: 1201px) {
+  #desktop-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent; /* start transparent over hero */
+    box-shadow: none;
+    transition: background-color 300ms ease, box-shadow 300ms ease, transform 300ms ease;
+  }
+
+  /* When scrolled, make nav solid and slightly compact */
+  #desktop-nav.scrolled {
+    background: white;
+    box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+  }
+
+  /* Offset page content so header doesn't cover it */
+  body {
+    padding-top: 17vh; /* matches original nav height */
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
