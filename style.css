@@ -273,6 +273,17 @@ section {
   gap: 1rem;
 }
 
+/* GitHub-style button */
+.btn-live {
+  background: #fff;
+  color: #000;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  font-weight: 600;
+}
+.btn-live:hover { background: #f3f3f3; }
+
 /* ABOUT SECTION */
 
 #about {
